@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pomodoro Clock</title>
+    <link rel="stylesheet" type="text/css" href="pomodoro-clock.css">
+  </head>
+
+  <body>
+    <div class="title-container">
+        <h1 class="title">POMODORO CLOCK</h1>
+        <div class=tomato-img></div>
+    </div>
+    <div class="outer-container">
+        <div class="contents">
+            <div class="duration-container">
+                <div class="duration-contents">
+                    <div class="set-container interval">
+                        <div class="set-contents interval">
+                            <div class="set-display interval">
+                                <h4 class="num-label interval">Interval</h4>
+                                <div class="display">
+                                    <h3 id="int-set-display" class="set-num interval">25</h3>
+                                </div>
+                            </div>
+                            <div class="set-control interval">
+                                <div class="increase-container interval">
+                                    <input type="image" class="img-play up" src="pomodoro-clock-sprite.png" id="upIntervalImg" alt="+" height="42" width="42">
+                                </div>
+                                <div class="decrease-container interval">
+                                    <input type="image" class="img-play down" src="pomodoro-clock-sprite.png" id="downIntervalImg" alt="-" height="42" width="42">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="set-container rest">
+                        <div class="set-contents rest">
+                            <div class="set-display rest">
+                                <h4 class="num-label rest">Rest</h4>
+                                <div class="display">
+                                    <h3 id="rest-set-display" class="set-num rest">5</h3>
+                                </div>
+                            </div>
+                            <div class="set-control rest">
+                                <div class="increase-container rest">
+                                    <input type="image" class="img-play up" src="pomodoro-clock-sprite.png" id="upRestImg" alt="+" height="42" width="42">
+                                </div>
+                                <div class="decrease-container rest">
+                                    <input type="image" class="img-play down" src="pomodoro-clock-sprite.png" id="downRestImg" alt="-" height="42" width="42">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clock-container">
+                <div class="clock-display-contents">
+                    <div class="clock-display remaining">
+                        <h4 class="num-label remaining">Remaining</h4>
+                        <div class="display">
+                            <h1 id="int-display" class="clock remaining">25:00</h1>
+                        </div>
+                    </div>
+                    <div class="clock-display elapsed">
+                        <h4 class="num-label elapsed">Elapsed</h4>
+                        <div class="display">
+                            <h1 id="elapsed-display" class="clock elapsed">00:00</h1>
+                        </div>
+                    </div>
+                </div><br />
+                <div class="clock-control-contents">
+                    <div class="play-container control">
+                        <input type="image" class="img-play play" src="pomodoro-clock-sprite.png" id="playImg" alt="Play" height="256" width="256">
+                    </div>
+                    <div class="pause-container control">
+                        <input type="image" class="img-pause" src="pomodoro-clock-sprite.png" id="pauseImg" alt="Pause" height="256" width="256">
+                    </div>
+                    <div class="stop-container control">
+                        <input type="image" class="img-stop" src="pomodoro-clock-sprite.png" id="stopImg" alt="Stop" height="256" width="256">
+                    </div>
+                    <div class="reset-container control">
+                        <input type="image" class="img-reset" src="pomodoro-clock-sprite.png" id="resetImg" alt="Reset" height="42" width="42">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="pomodoro-clock.js"></script>
+</html>
